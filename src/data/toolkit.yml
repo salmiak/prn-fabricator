@@ -1,0 +1,14 @@
+colors:
+  Primary:
+    Dark Tan: "rgb(117, 15, 16)"
+    Tulip Tree: "rgb(232, 185, 44)"
+  Surfaces:
+    Pine Glade: "rgb(195, 209, 158)"
+    Granny Smith: "rgb(133, 155, 160)"
+    Edgewater: "rgb(199, 224, 218)"
+  Feedback:
+    Danger: "rgb(251,207,189)"
+    Info: "rgb(197,219,242)"
+    Success: "rgb(216,234,204)"
+    Warning: "rgb(251,238,202)"
+    Update: "rgb(249,224,250)"
