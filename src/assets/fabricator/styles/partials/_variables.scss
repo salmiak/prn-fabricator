@@ -12,7 +12,7 @@ $theme-dark: (
 );
 
 $theme-light: (
-	menu-background: hsl(0, 0%, 100%),
+	menu-background: #EFF2F3,
 	menu-text: map-get($base-colors, medium),
 	normal: map-get($base-colors, medium)
 );

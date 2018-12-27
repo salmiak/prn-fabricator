@@ -1,0 +1,17 @@
+---
+notes: |
+  In the ProReNata brand we have two brand colors, red and yellow. These are to be used boldly to create interest and delight.
+
+  These are complemented with surface colors and feedback colors. Surface colors are, as the name implies, to be used for surfaces in the UI. Feedback colors are colors which communicate something (like warning, danger and success).
+---
+{{#each toolkit.colors}}
+	<h4>{{@key}}</h4>
+	<div class="f-color-chips">
+	{{#each this}}
+		<div class="f-color-chip">
+			<div class="f-color-chip__name">{{@key}}</div>
+			<div class="f-color-chip__color">{{this}}</div>
+		</div>
+	{{/each}}
+	</div>
+{{/each}}
