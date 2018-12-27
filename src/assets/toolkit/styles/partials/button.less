@@ -1,0 +1,54 @@
+.button {
+  background-color: @cS700;
+  border: none;
+
+  display: inline-block;
+  border-radius: .25rem;
+  margin-bottom: .25rem;
+
+  line-height: 1.5rem;
+  padding: 0.25rem calc(1rem - 0.1em) 0.25rem 1rem;
+
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+
+  color: @cLight75;
+
+  cursor: pointer;
+
+  &-primary {
+    background-color: @cColza;
+    color: @cDark75;
+  }
+
+  &.disabled, &-disabled {
+    background-color: @cS300;
+    color: @cDark50;
+  }
+
+  &-small {
+    line-height: 1rem;
+    padding: 0.25rem calc(.5rem - 0.1em) 0.25rem .5rem;
+  }
+  &-large {
+    line-height: 1.5rem;
+    padding: 0.5rem calc(1.5rem - 0.1em) 0.5rem 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .fa {
+    font-size: 1em;
+  }
+  .fa:first-child {
+    margin: 0 .25em 0 -0.25em;
+  }
+  .fa:last-child:not(:first-child) {
+    margin: 0 -0.25em 0 calc(.25em + 0.1em);
+  }
+  &-icon .fa:first-child:last-child {
+    margin: 0 -.5em;
+  }
+}

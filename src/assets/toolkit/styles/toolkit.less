@@ -5,14 +5,17 @@
 @import '../../../../node_modules/reset-css/less/reset';
 * { box-sizing: border-box; }
 
-@import 'typography';
+@import 'partials/colors.less';
+@import 'partials/typography';
+
+@import 'partials/button';
 
 body {
-  background: #D0D8DA;
-  color: #241C15;
+  background: @cS200;
+  color: @cDark100;
 }
 
 hr {
   border: none;
-  border-bottom: 1px solid rgb(36,28,21,.75);
+  border-bottom: 1px solid @cS50;
 }
