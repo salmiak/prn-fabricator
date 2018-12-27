@@ -3,9 +3,19 @@
 html, body {
   font-family: 'Inter UI', sans-serif;
   font-feature-settings: 'calt' 1, 'tnum' 1, 'ss01' 1, 'ss02' 1;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: -0.005em;
   line-height: 1.5rem;
+  
+  @media screen and (max-width: 700px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 560px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 490px) {
+    font-size: 12px;
+  }
 }
 @supports (font-variation-settings: normal) {
   html {
