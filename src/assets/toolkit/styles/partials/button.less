@@ -1,10 +1,27 @@
+.button-hover(@color) {
+  background-color: @color;
+
+  &:not(.disabled):not(&-disabled):not([disabled]){
+    cursor: pointer;
+    &:hover, &:active, &:focus {
+      background-color: saturate(darken(@color, 10%),25%);
+    }
+  }
+
+  &.disabled, &-disabled, [disabled] {
+    background-color: desaturate(lighten(@color, 25%),0%);
+    color: @cDark50;
+  }
+}
+
 .button {
-  background-color: @cS700;
+  color: @cLight75;
+  .button-hover(@cS700);
   border: none;
 
   display: inline-block;
   border-radius: .25rem;
-  margin-bottom: .25rem;
+  margin-bottom: .5rem;
 
   line-height: 1.5rem;
   padding: 0.25rem calc(1rem - 0.1em) 0.25rem 1rem;
@@ -15,18 +32,10 @@
   letter-spacing: 0.1em;
   font-size: 0.85rem;
 
-  color: @cLight75;
-
-  cursor: pointer;
 
   &-primary {
-    background-color: @cColza;
+    .button-hover(@cPrimary);
     color: @cDark75;
-  }
-
-  &.disabled, &-disabled {
-    background-color: @cS300;
-    color: @cDark50;
   }
 
   &-small {
