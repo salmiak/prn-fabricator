@@ -1,8 +1,10 @@
 @import url('https://rsms.me/inter/inter-ui.css');
 @import url('https://fonts.googleapis.com/css?family=Corben');
 
+@fontfamily: 'Inter UI', sans-serif;
+
 html, body {
-  font-family: 'Inter UI', sans-serif;
+  font-family: @fontfamily;
   font-feature-settings: 'calt' 1, 'tnum' 1, 'ss01' 1, 'ss02' 1;
   font-size: 18px;
   letter-spacing: -0.005em;
@@ -27,7 +29,7 @@ html, body {
 h1, .h1 {
   font-size: 4rem;
   font-weight: 300;
-  letter-spacing: -0.017em;
+  // letter-spacing: -0.017em;
   margin-bottom: 1.5rem;
   line-height: 4rem;
   font-family: 'Corben', cursive;
@@ -43,7 +45,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.016em;
   margin: 1.5rem 0 1rem;
   line-height: 2.5rem;
@@ -78,12 +80,16 @@ p {
   max-width: 33rem;
 }
 
+.small() {
+  font-size: 0.707rem;
+  line-height: 1rem;
+}
+
 .text {
   &-muted {
     color: @cDark75;
   }
   &-small, &-caption {
-    font-size: 0.707rem;
-    line-height: 1rem;
+    .small;
   }
 }

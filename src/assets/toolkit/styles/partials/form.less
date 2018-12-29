@@ -1,0 +1,50 @@
+input {
+  @borderWidth: 1px;
+  @radius: .25rem;
+
+  box-sizing: border-box;
+  display: block;
+
+  border: @borderWidth solid @cDark30;
+  border-radius: @radius;
+
+  margin-bottom: .5rem;
+  line-height: 2rem;
+  font-family: @fontfamily;
+  font-size: 1rem;
+  padding: calc(0.25rem - @borderWidth) calc(.5rem - 0.1em) calc(0.25rem - @borderWidth) .5rem;
+
+  width: 100%;
+  outline-color: @cColza;
+}
+
+label {
+  .small;
+  font-weight: 500;
+  color: @cDark75;
+  display: block;
+  padding: 0.25rem .25rem;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+
+  > .input-icon {
+    position: absolute;
+    top: .75rem;
+    color: @cDark75;
+    &-left {
+      left: .75rem;
+      ~ input {
+        padding-left: 2.25rem;
+      }
+    }
+    &-right {
+      right: .75rem;
+      ~ input {
+        padding-right: 2.25rem;
+      }
+    }
+  }
+}
