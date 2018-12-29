@@ -1,21 +1,26 @@
-input {
-  @borderWidth: 1px;
-  @radius: .25rem;
+@radius: .25rem;
+@borderWidth: 1px;
 
+input, textarea {
   box-sizing: border-box;
   display: block;
 
-  border: @borderWidth solid @cDark30;
+  border: @borderWidth solid @cS400;
   border-radius: @radius;
 
   margin-bottom: .5rem;
   line-height: 2rem;
   font-family: @fontfamily;
   font-size: 1rem;
-  padding: calc(0.25rem - @borderWidth) calc(.5rem - 0.1em) calc(0.25rem - @borderWidth) .5rem;
+  padding: calc(0.25rem - @borderWidth) .5rem;
 
   width: 100%;
   outline-color: @cColza;
+}
+
+textarea {
+  line-height: 1.5rem;
+  padding: calc(0.5rem - @borderWidth) .5rem;
 }
 
 label {
@@ -29,7 +34,20 @@ label {
 .input-group {
   position: relative;
   display: flex;
+  > * {
+    border-radius: 0;
+  }
+  > :first-child {
+    border-radius: @radius 0 0 @radius;
+  }
+  > :last-child {
+    border-radius: 0 @radius @radius 0;
+  }
+}
 
+
+.input-icons {
+  position: relative;
   > .input-icon {
     position: absolute;
     top: .75rem;

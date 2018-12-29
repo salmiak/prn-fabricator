@@ -220,17 +220,17 @@
 					</span>
 				</div>
 			</div><div class="f-item-preview">
-	<span class="button button-primary"><i class="fa fa-star"></i> With icon</span>
-<span class="button"><i class="fa fa-baby"></i> With icons <i class="fa fa-chevron-down"></i></span>
-<span class="button button-icon"><i class="fa fa-box-open"></i></span>
-<span class="button button-large"><i class="fa fa-trash"></i> Large with icon</span>
+	<span class="button button-primary"><i class="fa fa-star"></i> With icon</span><br />
+<span class="button"><i class="fa fa-baby"></i> With icons <i class="fa fa-chevron-down"></i></span><br />
+<span class="button button-icon"><i class="fa fa-box-open fa-fw"></i></span><br />
+<span class="button button-large"><i class="fa fa-trash"></i> Large with icon</span><br />
 <span class="button button-small button-disabled"><i class="fa fa-sort-amount-up"></i> Small with icon</span>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;span class&#x3D;&quot;button button-primary&quot;&gt;&lt;i class&#x3D;&quot;fa fa-star&quot;&gt;&lt;/i&gt; With icon&lt;/span&gt;
-&lt;span class&#x3D;&quot;button&quot;&gt;&lt;i class&#x3D;&quot;fa fa-baby&quot;&gt;&lt;/i&gt; With icons &lt;i class&#x3D;&quot;fa fa-chevron-down&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-&lt;span class&#x3D;&quot;button button-icon&quot;&gt;&lt;i class&#x3D;&quot;fa fa-box-open&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-&lt;span class&#x3D;&quot;button button-large&quot;&gt;&lt;i class&#x3D;&quot;fa fa-trash&quot;&gt;&lt;/i&gt; Large with icon&lt;/span&gt;
+	<pre><code class="language-markup">&lt;span class&#x3D;&quot;button button-primary&quot;&gt;&lt;i class&#x3D;&quot;fa fa-star&quot;&gt;&lt;/i&gt; With icon&lt;/span&gt;&lt;br /&gt;
+&lt;span class&#x3D;&quot;button&quot;&gt;&lt;i class&#x3D;&quot;fa fa-baby&quot;&gt;&lt;/i&gt; With icons &lt;i class&#x3D;&quot;fa fa-chevron-down&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;br /&gt;
+&lt;span class&#x3D;&quot;button button-icon&quot;&gt;&lt;i class&#x3D;&quot;fa fa-box-open fa-fw&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;br /&gt;
+&lt;span class&#x3D;&quot;button button-large&quot;&gt;&lt;i class&#x3D;&quot;fa fa-trash&quot;&gt;&lt;/i&gt; Large with icon&lt;/span&gt;&lt;br /&gt;
 &lt;span class&#x3D;&quot;button button-small button-disabled&quot;&gt;&lt;i class&#x3D;&quot;fa fa-sort-amount-up&quot;&gt;&lt;/i&gt; Small with icon&lt;/span&gt;</code></pre>
 </div>
 
@@ -251,7 +251,7 @@
 	<span class="button"><i class="fa fa-print"></i> Print</span>
 	<span class="button" disabled><i class="fa fa-ban"></i> Disabled</span>
 	<span class="button"><span>More</span> <i class="fa fa-chevron-down"></i></span>
-	<span class="button button-icon"><i class="fa fa-arrow-down"></i></span>
+	<span class="button button-icon"><i class="fa fa-arrow-down fa-fw"></i></span>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -260,7 +260,7 @@
 	&lt;span class&#x3D;&quot;button&quot;&gt;&lt;i class&#x3D;&quot;fa fa-print&quot;&gt;&lt;/i&gt; Print&lt;/span&gt;
 	&lt;span class&#x3D;&quot;button&quot; disabled&gt;&lt;i class&#x3D;&quot;fa fa-ban&quot;&gt;&lt;/i&gt; Disabled&lt;/span&gt;
 	&lt;span class&#x3D;&quot;button&quot;&gt;&lt;span&gt;More&lt;/span&gt; &lt;i class&#x3D;&quot;fa fa-chevron-down&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-	&lt;span class&#x3D;&quot;button button-icon&quot;&gt;&lt;i class&#x3D;&quot;fa fa-arrow-down&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+	&lt;span class&#x3D;&quot;button button-icon&quot;&gt;&lt;i class&#x3D;&quot;fa fa-arrow-down fa-fw&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -379,7 +379,7 @@
 <input type="text" id="textInput" placeholder="Placeholder" />
 
 <label for="textInputIcons">Text input with icons</label>
-<div class="input-group">
+<div class="input-icons">
 	<i class="fa fa-search input-icon input-icon-right"></i>
 	<i class="fa fa-poo-storm input-icon input-icon-left"></i>
 	<input type="text" id="textInputIcons" placeholder="Placeholder" />
@@ -388,7 +388,14 @@
 <label for="textInputButton">Text input with button</label>
 <div class="input-group">
 	<input type="text" id="textInputButton" placeholder="Placeholder" />
-	<span class="button button-primary">Save</span>
+	<span class="button"><i class="fa fa-paper-plane"></i> Send</span>
+</div>
+
+<label for="textInputButton">Text input with two buttons</label>
+<div class="input-group">
+	<span class="button"><span>Select</span> <i class="fa fa-chevron-down"></i></span>
+	<input type="text" id="textInputButton" placeholder="Placeholder" />
+	<span class="button button-primary button-icon"><i class="fa fa-save fa-fw"></i></span>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -396,7 +403,7 @@
 &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot; placeholder&#x3D;&quot;Placeholder&quot; /&gt;
 
 &lt;label for&#x3D;&quot;textInputIcons&quot;&gt;Text input with icons&lt;/label&gt;
-&lt;div class&#x3D;&quot;input-group&quot;&gt;
+&lt;div class&#x3D;&quot;input-icons&quot;&gt;
 	&lt;i class&#x3D;&quot;fa fa-search input-icon input-icon-right&quot;&gt;&lt;/i&gt;
 	&lt;i class&#x3D;&quot;fa fa-poo-storm input-icon input-icon-left&quot;&gt;&lt;/i&gt;
 	&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInputIcons&quot; placeholder&#x3D;&quot;Placeholder&quot; /&gt;
@@ -405,7 +412,14 @@
 &lt;label for&#x3D;&quot;textInputButton&quot;&gt;Text input with button&lt;/label&gt;
 &lt;div class&#x3D;&quot;input-group&quot;&gt;
 	&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInputButton&quot; placeholder&#x3D;&quot;Placeholder&quot; /&gt;
-	&lt;span class&#x3D;&quot;button button-primary&quot;&gt;Save&lt;/span&gt;
+	&lt;span class&#x3D;&quot;button&quot;&gt;&lt;i class&#x3D;&quot;fa fa-paper-plane&quot;&gt;&lt;/i&gt; Send&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;label for&#x3D;&quot;textInputButton&quot;&gt;Text input with two buttons&lt;/label&gt;
+&lt;div class&#x3D;&quot;input-group&quot;&gt;
+	&lt;span class&#x3D;&quot;button&quot;&gt;&lt;span&gt;Select&lt;/span&gt; &lt;i class&#x3D;&quot;fa fa-chevron-down&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+	&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInputButton&quot; placeholder&#x3D;&quot;Placeholder&quot; /&gt;
+	&lt;span class&#x3D;&quot;button button-primary button-icon&quot;&gt;&lt;i class&#x3D;&quot;fa fa-save fa-fw&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -421,10 +435,10 @@
 					</span>
 				</div>
 			</div><div class="f-item-preview">
-	<textarea name="" id="" cols="30" rows="10"></textarea>
+	<textarea name="" id="" cols="30" rows="10">The awesome, seven-foot-tall Dark Lord of the Sith makes his way into the blinding light of the main passageway. This is Darth Vader, right hand of the Emperor. His face is obscured by his flowing black robes and grotesque breath mask, which stands out next to the fascist white armored suits of the Imperial stormtroopers.</textarea>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;textarea name&#x3D;&quot;&quot; id&#x3D;&quot;&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;10&quot;&gt;&lt;/textarea&gt;</code></pre>
+	<pre><code class="language-markup">&lt;textarea name&#x3D;&quot;&quot; id&#x3D;&quot;&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;10&quot;&gt;The awesome, seven-foot-tall Dark Lord of the Sith makes his way into the blinding light of the main passageway. This is Darth Vader, right hand of the Emperor. His face is obscured by his flowing black robes and grotesque breath mask, which stands out next to the fascist white armored suits of the Imperial stormtroopers.&lt;/textarea&gt;</code></pre>
 </div>
 
 		</div>
