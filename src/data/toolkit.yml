@@ -1,7 +1,7 @@
 colors:
   Primary:
-    "@cRedwood": "rgb(117, 15, 16)"
-    "@cColza": "rgb(232, 185, 44)"
+    "@cSol": "#501"
+    "@cFabric": "#FAB21C"
   Surface:
     "@cS50": "#FFFFFF"
     "@cS100": "#EFF2F3"
