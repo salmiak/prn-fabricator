@@ -3,9 +3,10 @@
 @expandedNavWidth: 13rem;
 @collapsedNavWidth: 3.5rem;
 
-.wrapper {
+.container-with-nav {
   padding-top: @headerSize+1;
   padding-left: @expandedNavWidth;
+  padding-bottom: @headerSize*2;
 
   @media all and (max-width: @breakWidth) {
     padding-left: @collapsedNavWidth;

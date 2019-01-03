@@ -72,6 +72,9 @@
 							<a href="bases.html#colors">Colors</a>
 						</li>
 						<li>
+							<a href="bases.html#grid">Grid</a>
+						</li>
+						<li>
 							<a href="bases.html#typography">Typography</a>
 						</li>
 					</ul>
@@ -100,7 +103,7 @@
 					<a href="structures.html" class="f-menu__heading">Structures</a>
 					<ul>
 						<li>
-							<a href="structures.html#form">Form</a>
+							<a href="structures.html#header">Header</a>
 						</li>
 					</ul>
 				</li>
@@ -109,10 +112,10 @@
 					<a href="pages.html" class="f-menu__heading">Pages</a>
 					<ul>
 						<li>
-							<a href="pages/grid.html" target="_blank">Grid</a>
+							<a href="pages/Chrome.html" target="_blank">Chrome</a>
 						</li>
 						<li>
-							<a href="pages/home.html" target="_blank">Home</a>
+							<a href="pages/Grid.html" target="_blank">Grid</a>
 						</li>
 					</ul>
 				</li>
@@ -145,10 +148,10 @@
 <h1 data-f-toggle="labels">Structures</h1>
 
 
-<div class="f-item-group" id="form">
+<div class="f-item-group" id="header">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Form</h2>
+		<h2 class="f-item-heading">Header</h2>
 		<div class="f-item-controls">
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
@@ -157,78 +160,46 @@
 			</span>
 		</div>
 	</div><div class="f-item-preview">
-	<form action="">
-	<div>
-		<label for="textInput">Text input</label>
-		<input type="text" id="textInput" /> </div>
-	<div>
-		<button class="button">Button</button>
-		<span class="button">Span</span>
-		<div class="button">Div</div>
-		<a href="#" class="button">Anchor</a>
+	<header>
+	<div class="col col-1-4">
+		<div class="content">ProReNata</div>
 	</div>
-
-	<div>
-		<span class="button">Default</span>
-		<span class="button button-primary">Primary</span>
-		<span class="button button-disabled">Disabled</span>
+	<div class="col col-1-2">
+		<div class="content">
+			<div class="input-group">
+				<input type="search" />
+				<span class="button button-primary"><i class="fa fa-search"></i> Sök</span>
+			</div>
+		</div>
 	</div>
-
-	<div>
-		<span class="button button-small">Small</span>
-		<span class="button button-small button-primary">Small primary</span>
+	<div class="col col-1-4">
+		<div class="content text-align-right">
+			<span class="button button-primary button-icon"><i class="fa fa-copy"></i></span>
+			<span class="button button-primary button-icon"><i class="fa fa-life-ring"></i></span>
+		</div>
 	</div>
-
-	<div>
-		<span class="button button-large">Large</span>
-		<span class="button button-large button-primary">Large primary</span>
-	</div>
-
-	<div>
-		<span class="button button-primary"><i class="fa fa-star"></i> With icon</span>
-		<span class="button"><i class="fa fa-baby"></i> With icons <i class="fa fa-chevron-down"></i></span>
-		<span class="button button-icon"><i class="fa fa-box-open"></i></span>
-		<span class="button button-large"><i class="fa fa-trash"></i> Large with icon</span>
-		<span class="button button-small button-disabled"><i class="fa fa-sort-amount-up"></i> Small with icon</span>
-	</div>
-</form>
+</header>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;form action&#x3D;&quot;&quot;&gt;
-	&lt;div&gt;
-		&lt;label for&#x3D;&quot;textInput&quot;&gt;Text input&lt;/label&gt;
-		&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot; /&gt; &lt;/div&gt;
-	&lt;div&gt;
-		&lt;button class&#x3D;&quot;button&quot;&gt;Button&lt;/button&gt;
-		&lt;span class&#x3D;&quot;button&quot;&gt;Span&lt;/span&gt;
-		&lt;div class&#x3D;&quot;button&quot;&gt;Div&lt;/div&gt;
-		&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;button&quot;&gt;Anchor&lt;/a&gt;
+	<pre><code class="language-markup">&lt;header&gt;
+	&lt;div class&#x3D;&quot;col col-1-4&quot;&gt;
+		&lt;div class&#x3D;&quot;content&quot;&gt;ProReNata&lt;/div&gt;
 	&lt;/div&gt;
-
-	&lt;div&gt;
-		&lt;span class&#x3D;&quot;button&quot;&gt;Default&lt;/span&gt;
-		&lt;span class&#x3D;&quot;button button-primary&quot;&gt;Primary&lt;/span&gt;
-		&lt;span class&#x3D;&quot;button button-disabled&quot;&gt;Disabled&lt;/span&gt;
+	&lt;div class&#x3D;&quot;col col-1-2&quot;&gt;
+		&lt;div class&#x3D;&quot;content&quot;&gt;
+			&lt;div class&#x3D;&quot;input-group&quot;&gt;
+				&lt;input type&#x3D;&quot;search&quot; /&gt;
+				&lt;span class&#x3D;&quot;button button-primary&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot;&gt;&lt;/i&gt; Sök&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 	&lt;/div&gt;
-
-	&lt;div&gt;
-		&lt;span class&#x3D;&quot;button button-small&quot;&gt;Small&lt;/span&gt;
-		&lt;span class&#x3D;&quot;button button-small button-primary&quot;&gt;Small primary&lt;/span&gt;
+	&lt;div class&#x3D;&quot;col col-1-4&quot;&gt;
+		&lt;div class&#x3D;&quot;content text-align-right&quot;&gt;
+			&lt;span class&#x3D;&quot;button button-primary button-icon&quot;&gt;&lt;i class&#x3D;&quot;fa fa-copy&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class&#x3D;&quot;button button-primary button-icon&quot;&gt;&lt;i class&#x3D;&quot;fa fa-life-ring&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;/div&gt;
 	&lt;/div&gt;
-
-	&lt;div&gt;
-		&lt;span class&#x3D;&quot;button button-large&quot;&gt;Large&lt;/span&gt;
-		&lt;span class&#x3D;&quot;button button-large button-primary&quot;&gt;Large primary&lt;/span&gt;
-	&lt;/div&gt;
-
-	&lt;div&gt;
-		&lt;span class&#x3D;&quot;button button-primary&quot;&gt;&lt;i class&#x3D;&quot;fa fa-star&quot;&gt;&lt;/i&gt; With icon&lt;/span&gt;
-		&lt;span class&#x3D;&quot;button&quot;&gt;&lt;i class&#x3D;&quot;fa fa-baby&quot;&gt;&lt;/i&gt; With icons &lt;i class&#x3D;&quot;fa fa-chevron-down&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-		&lt;span class&#x3D;&quot;button button-icon&quot;&gt;&lt;i class&#x3D;&quot;fa fa-box-open&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-		&lt;span class&#x3D;&quot;button button-large&quot;&gt;&lt;i class&#x3D;&quot;fa fa-trash&quot;&gt;&lt;/i&gt; Large with icon&lt;/span&gt;
-		&lt;span class&#x3D;&quot;button button-small button-disabled&quot;&gt;&lt;i class&#x3D;&quot;fa fa-sort-amount-up&quot;&gt;&lt;/i&gt; Small with icon&lt;/span&gt;
-	&lt;/div&gt;
-&lt;/form&gt;</code></pre>
+&lt;/header&gt;</code></pre>
 </div>
 
 
