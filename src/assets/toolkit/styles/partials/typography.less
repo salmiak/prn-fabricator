@@ -7,7 +7,7 @@
 
 html, body {
   font-family: @fontfamily;
-  font-feature-settings: 'calt' 1, 'tnum' 1, 'ss01' 1, 'ss02' 1;
+  font-feature-settings: 'calt' 1, 'ss01' 1, 'ss02' 1;
   font-size: 20px;
   letter-spacing: -0.005em;
   line-height: 1.5rem;
@@ -97,9 +97,21 @@ code, pre {
   border-radius: @radius;
 }
 
+.strong() {
+  font-weight: 700;
+}
+strong, b {
+  .strong;
+}
+
 .small() {
   font-size: 0.707rem;
   line-height: 1rem;
+}
+.capitals() {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-feature-settings: 'case' 1, 'calt' 1, 'ss01' 1, 'ss02' 1;
 }
 
 .text {

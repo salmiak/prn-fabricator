@@ -1,7 +1,7 @@
 @radius: .25rem;
 @borderWidth: 1px;
 
-input, textarea, select {
+input:not([type=checkbox]):not([type=radio]), textarea, select {
   box-sizing: border-box;
   display: block;
 
@@ -18,6 +18,12 @@ input, textarea, select {
   outline-color: @cFabric;
 }
 
+input[type=checkbox], input[type=radio] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
 textarea {
   line-height: 1.5rem;
   padding: calc(0.5rem - @borderWidth) .5rem;
@@ -27,7 +33,7 @@ select {
   height: 2.5rem;
 }
 
-label {
+label:not(.label-inline) {
   .small;
   font-weight: 500;
   color: @cDark75;
