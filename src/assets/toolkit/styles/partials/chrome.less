@@ -3,14 +3,8 @@
 @expandedNavWidth: 13rem;
 @collapsedNavWidth: 3.5rem;
 
-.container-with-nav {
+.container:first-of-type {
   padding-top: @headerSize+1;
-  padding-left: @expandedNavWidth;
-  padding-bottom: @headerSize*2;
-
-  @media all and (max-width: @breakWidth) {
-    padding-left: @collapsedNavWidth;
-  }
 }
 
 header {
@@ -26,6 +20,15 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+}
+
+
+.container-with-nav {
+  padding-left: @expandedNavWidth;
+
+  @media all and (max-width: @breakWidth) {
+    padding-left: @collapsedNavWidth;
+  }
 }
 
 nav {
