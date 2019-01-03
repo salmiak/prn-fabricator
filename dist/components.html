@@ -175,6 +175,7 @@
 <div>
 	<span class="button">Default</span>
 	<span class="button button-primary">Primary</span>
+	<span class="button button-destructive">Destructive</span>
 	<span class="button button-disabled">Disabled</span>
 </div>
 </div>
@@ -187,6 +188,7 @@
 &lt;div&gt;
 	&lt;span class&#x3D;&quot;button&quot;&gt;Default&lt;/span&gt;
 	&lt;span class&#x3D;&quot;button button-primary&quot;&gt;Primary&lt;/span&gt;
+	&lt;span class&#x3D;&quot;button button-destructive&quot;&gt;Destructive&lt;/span&gt;
 	&lt;span class&#x3D;&quot;button button-disabled&quot;&gt;Disabled&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -295,12 +297,12 @@
 				</div>
 			</div><div class="f-item-preview">
 	<label class="label-inline">
-	<input type="checkbox" /> Checkbox
+	<input type="checkbox" /> Do you know who I am?
 </label>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;label class&#x3D;&quot;label-inline&quot;&gt;
-	&lt;input type&#x3D;&quot;checkbox&quot; /&gt; Checkbox
+	&lt;input type&#x3D;&quot;checkbox&quot; /&gt; Do you know who I am?
 &lt;/label&gt;</code></pre>
 </div>
 
@@ -316,30 +318,42 @@
 					</span>
 				</div>
 			</div><div class="f-item-preview">
-	<label class="label-inline">
-	<input type="radio" name="groupName" id="radio1" /> Radio 1
-</label>
-
-<label class="label-inline">
-	<input type="radio" name="groupName" id="radio2" /> Radio 2
-</label>
-
-<label class="label-inline">
-	<input type="radio" name="groupName" id="radio3" /> Radio 3
-</label>
+	<ul class="list-unstyled">
+	<li>
+		<label class="label-inline">
+			<input type="radio" name="groupName" id="radio1" /> This one's wet!
+		</label>
+	</li>
+	<li>
+		<label class="label-inline">
+			<input type="radio" name="groupName" id="radio2" /> This one's wet!
+		</label>
+	</li>
+	<li>
+		<label class="label-inline">
+			<input type="radio" name="groupName" id="radio3" /> This one's wet!
+		</label>
+	</li>
+</ul>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label class&#x3D;&quot;label-inline&quot;&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio1&quot; /&gt; Radio 1
-&lt;/label&gt;
-
-&lt;label class&#x3D;&quot;label-inline&quot;&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio2&quot; /&gt; Radio 2
-&lt;/label&gt;
-
-&lt;label class&#x3D;&quot;label-inline&quot;&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio3&quot; /&gt; Radio 3
-&lt;/label&gt;</code></pre>
+	<pre><code class="language-markup">&lt;ul class&#x3D;&quot;list-unstyled&quot;&gt;
+	&lt;li&gt;
+		&lt;label class&#x3D;&quot;label-inline&quot;&gt;
+			&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio1&quot; /&gt; This one&#x27;s wet!
+		&lt;/label&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;label class&#x3D;&quot;label-inline&quot;&gt;
+			&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio2&quot; /&gt; This one&#x27;s wet!
+		&lt;/label&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;label class&#x3D;&quot;label-inline&quot;&gt;
+			&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio3&quot; /&gt; This one&#x27;s wet!
+		&lt;/label&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
 </div>
 
 		</div>
@@ -401,6 +415,11 @@
 	<input type="text" id="textInputButton" placeholder="Placeholder" />
 	<span class="button"><i class="fa fa-paper-plane"></i> Send</span>
 </div>
+<div class="input-hint">Here's a helpful tip regarding this input.</div>
+
+<label for="textInputButton" class="text-error">Validation error</label>
+<input type="text" id="textInputButton" placeholder="Email" class="input-validation-error" value="darth-vaders email@deathstar.gov" />
+<div class="input-hint text-error">Please enter a valid email address.</div>
 
 <label for="textInputButton">Text input with two buttons</label>
 <div class="input-group">
@@ -425,6 +444,11 @@
 	&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInputButton&quot; placeholder&#x3D;&quot;Placeholder&quot; /&gt;
 	&lt;span class&#x3D;&quot;button&quot;&gt;&lt;i class&#x3D;&quot;fa fa-paper-plane&quot;&gt;&lt;/i&gt; Send&lt;/span&gt;
 &lt;/div&gt;
+&lt;div class&#x3D;&quot;input-hint&quot;&gt;Here&#x27;s a helpful tip regarding this input.&lt;/div&gt;
+
+&lt;label for&#x3D;&quot;textInputButton&quot; class&#x3D;&quot;text-error&quot;&gt;Validation error&lt;/label&gt;
+&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInputButton&quot; placeholder&#x3D;&quot;Email&quot; class&#x3D;&quot;input-validation-error&quot; value&#x3D;&quot;darth-vaders email@deathstar.gov&quot; /&gt;
+&lt;div class&#x3D;&quot;input-hint text-error&quot;&gt;Please enter a valid email address.&lt;/div&gt;
 
 &lt;label for&#x3D;&quot;textInputButton&quot;&gt;Text input with two buttons&lt;/label&gt;
 &lt;div class&#x3D;&quot;input-group&quot;&gt;
@@ -584,6 +608,34 @@
 	&lt;li&gt;Come with me!&lt;/li&gt;
 	&lt;li&gt;What are you waiting for?!&lt;/li&gt;
 	&lt;li&gt;Get in gear!&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="lists.unstyled">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Unstyled</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<ul class="list-unstyled">
+	<li>I don't think I can make it.</li>
+	<li>You go on, Master Luke.</li>
+	<li>There's no sense in you risking yourself on my account.</li>
+	<li>I'm done for.</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ul class&#x3D;&quot;list-unstyled&quot;&gt;
+	&lt;li&gt;I don&#x27;t think I can make it.&lt;/li&gt;
+	&lt;li&gt;You go on, Master Luke.&lt;/li&gt;
+	&lt;li&gt;There&#x27;s no sense in you risking yourself on my account.&lt;/li&gt;
+	&lt;li&gt;I&#x27;m done for.&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 </div>
 

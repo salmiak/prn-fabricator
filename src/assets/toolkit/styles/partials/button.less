@@ -38,7 +38,10 @@
 
   &-primary {
     .button-hover(@cPrimary, saturate(darken(@cPrimary, 10%),25%), desaturate(lighten(@cPrimary, 10%),25%));
-    color: @cDark75;
+  }
+  &-destructive {
+    .button-hover(lighten(@cSol,15%), @cSol, desaturate(lighten(@cSol, 10%),25%));
+    color: fade(white, 70%);
   }
 
   &-small {

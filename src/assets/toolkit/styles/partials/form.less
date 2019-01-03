@@ -1,8 +1,7 @@
 @radius: .25rem;
 @borderWidth: 1px;
 
-input:not([type=checkbox]):not([type=radio]), textarea, select {
-  box-sizing: border-box;
+input, textarea, select {
   display: block;
 
   border: @borderWidth solid @cS400;
@@ -16,12 +15,21 @@ input:not([type=checkbox]):not([type=radio]), textarea, select {
 
   width: 100%;
   outline-color: @cFabric;
+
+  &.input-validation-error {
+    border-color: @cSol;
+    color: @cSol;
+    background-color: @cDanger;
+  }
 }
 
 input[type=checkbox], input[type=radio] {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  display: inline-block;
+  font-size: inherit;
+  line-height: inherit;
   margin: 0;
+  padding: 0;
+  width: auto;
 }
 
 textarea {
@@ -33,12 +41,19 @@ select {
   height: 2.5rem;
 }
 
-label:not(.label-inline) {
+label:not(.label-inline), .input-hint {
   .small;
   font-weight: 500;
   color: @cDark75;
   display: block;
   padding: 0.25rem .25rem;
+  &.text-error {
+    color: @cSol;
+  }
+}
+.input-hint {
+  padding-top: 0;
+  margin: -0.25rem 0 .5rem;
 }
 
 .input-group {
