@@ -8,7 +8,7 @@
 
 	<title></title>
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="assets/fabricator/styles/f.css">
 
@@ -93,6 +93,9 @@
 						</li>
 						<li>
 							<a href="components.html#lists">Lists</a>
+						</li>
+						<li>
+							<a href="components.html#logo">Logo</a>
 						</li>
 						<li>
 							<a href="components.html#table">Table</a>
@@ -319,7 +322,7 @@
 				</div>
 			</div><div class="f-item-preview">
 	<div class="toast toast-success">
-	<div class="toast-icon toast-icon-big"><i class="fa fa-thumbs-up fa-fw"></i></div>
+	<div class="toast-icon toast-icon-big"><i class="fal fa-thumbs-up fa-fw"></i></div>
 	<div class="toast-message">
 		<h4>You're all clear, kid.</h4>
 		Now let's blow this thing and go home!
@@ -335,7 +338,7 @@
 </div>
 
 <div class="toast toast-danger">
-	<div class="toast-icon toast-icon-big"><i class="fa fa-skull-crossbones fa-fw"></i></div>
+	<div class="toast-icon toast-icon-big"><i class="fal fa-skull-crossbones fa-fw"></i></div>
 	<div class="toast-message">
 		<h4>Negative!</h4>
 		It didn't go in. It just impacted on the surface.
@@ -343,17 +346,26 @@
 </div>
 
 <div class="toast toast-info">
-	<div class="toast-icon toast-icon-big"><i class="fa fa-info-circle fa-fw"></i></div>
+	<div class="toast-icon toast-icon-big"><i class="fal fa-info-circle fa-fw"></i></div>
 	<div class="toast-message">
 		<h4>Rebel base, in range.</h4>
 		You may fire when ready.
 	</div>
 	<div class="toast-action"><button class="button button-small button-flat"><i class="fa fa-rocket"></i> Fire</button></div>
 </div>
+
+<div class="toast toast-tip">
+	<div class="toast-icon toast-icon-big"><i class="fal fa-lightbulb-exclamation fa-fw"></i></div>
+	<div class="toast-message">
+		<h4>I sense something...</h4>
+		A presence I haven't felt since...
+	</div>
+	<div class="toast-action"><button class="button button-small button-flat">Got it</button></div>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;toast toast-success&quot;&gt;
-	&lt;div class&#x3D;&quot;toast-icon toast-icon-big&quot;&gt;&lt;i class&#x3D;&quot;fa fa-thumbs-up fa-fw&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+	&lt;div class&#x3D;&quot;toast-icon toast-icon-big&quot;&gt;&lt;i class&#x3D;&quot;fal fa-thumbs-up fa-fw&quot;&gt;&lt;/i&gt;&lt;/div&gt;
 	&lt;div class&#x3D;&quot;toast-message&quot;&gt;
 		&lt;h4&gt;You&#x27;re all clear, kid.&lt;/h4&gt;
 		Now let&#x27;s blow this thing and go home!
@@ -369,7 +381,7 @@
 &lt;/div&gt;
 
 &lt;div class&#x3D;&quot;toast toast-danger&quot;&gt;
-	&lt;div class&#x3D;&quot;toast-icon toast-icon-big&quot;&gt;&lt;i class&#x3D;&quot;fa fa-skull-crossbones fa-fw&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+	&lt;div class&#x3D;&quot;toast-icon toast-icon-big&quot;&gt;&lt;i class&#x3D;&quot;fal fa-skull-crossbones fa-fw&quot;&gt;&lt;/i&gt;&lt;/div&gt;
 	&lt;div class&#x3D;&quot;toast-message&quot;&gt;
 		&lt;h4&gt;Negative!&lt;/h4&gt;
 		It didn&#x27;t go in. It just impacted on the surface.
@@ -377,12 +389,21 @@
 &lt;/div&gt;
 
 &lt;div class&#x3D;&quot;toast toast-info&quot;&gt;
-	&lt;div class&#x3D;&quot;toast-icon toast-icon-big&quot;&gt;&lt;i class&#x3D;&quot;fa fa-info-circle fa-fw&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+	&lt;div class&#x3D;&quot;toast-icon toast-icon-big&quot;&gt;&lt;i class&#x3D;&quot;fal fa-info-circle fa-fw&quot;&gt;&lt;/i&gt;&lt;/div&gt;
 	&lt;div class&#x3D;&quot;toast-message&quot;&gt;
 		&lt;h4&gt;Rebel base, in range.&lt;/h4&gt;
 		You may fire when ready.
 	&lt;/div&gt;
 	&lt;div class&#x3D;&quot;toast-action&quot;&gt;&lt;button class&#x3D;&quot;button button-small button-flat&quot;&gt;&lt;i class&#x3D;&quot;fa fa-rocket&quot;&gt;&lt;/i&gt; Fire&lt;/button&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;toast toast-tip&quot;&gt;
+	&lt;div class&#x3D;&quot;toast-icon toast-icon-big&quot;&gt;&lt;i class&#x3D;&quot;fal fa-lightbulb-exclamation fa-fw&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+	&lt;div class&#x3D;&quot;toast-message&quot;&gt;
+		&lt;h4&gt;I sense something...&lt;/h4&gt;
+		A presence I haven&#x27;t felt since...
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;toast-action&quot;&gt;&lt;button class&#x3D;&quot;button button-small button-flat&quot;&gt;Got it&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -807,6 +828,40 @@
 </div>
 
 		</div>
+
+</div>
+
+
+<div class="f-item-group" id="logo">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Logo</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	<h1 class="logo">ProReNata</h1>
+
+<h2 class="logo">ProReNata</h2>
+<h3 class="logo">ProReNata</h3>
+<h4 class="logo">ProReNata</h4>
+
+<p>Here it is in the middle of the sentence <span class="logo">ProReNata</span>! Isn't that cool?</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;h1 class&#x3D;&quot;logo&quot;&gt;ProReNata&lt;/h1&gt;
+
+&lt;h2 class&#x3D;&quot;logo&quot;&gt;ProReNata&lt;/h2&gt;
+&lt;h3 class&#x3D;&quot;logo&quot;&gt;ProReNata&lt;/h3&gt;
+&lt;h4 class&#x3D;&quot;logo&quot;&gt;ProReNata&lt;/h4&gt;
+
+&lt;p&gt;Here it is in the middle of the sentence &lt;span class&#x3D;&quot;logo&quot;&gt;ProReNata&lt;/span&gt;! Isn&#x27;t that cool?&lt;/p&gt;</code></pre>
+</div>
+
 
 </div>
 
