@@ -1,15 +1,14 @@
 .toast {
-  @padding: 1rem;
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding: @padding;
+  padding: 1rem;
   margin-bottom: .5rem;
   position: relative;
-  border-left: .25rem solid @cS400;
-  border-radius: @radius;
+  border-left: .25rem solid @cBorder;
+  border-radius: @rNormal;
   box-shadow: @shadowSmall;
 
   .colorToast(@color) {
@@ -26,8 +25,8 @@
   &-icon{
     flex-grow: 0;
     flex-shrink: 0;
-    padding-right: @padding;
-    margin: -@padding 0;
+    padding-right: $padding;
+    margin: -$padding 0;
     display: flex;
     justify-content: center;
     align-items: center;

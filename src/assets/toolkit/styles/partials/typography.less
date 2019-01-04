@@ -1,7 +1,7 @@
 // InterUI - Font Source: https://rsms.me/inter/
 
 @import url('https://rsms.me/inter/inter-ui.css');
-@import url('https://fonts.googleapis.com/css?family=Corben');
+@import url('https://fonts.googleapis.com/css?family=Corben:400,700');
 
 @fontfamily: 'Inter UI', sans-serif;
 
@@ -9,6 +9,7 @@ html, body {
   font-family: @fontfamily;
   font-feature-settings: 'calt' 1, 'ss01' 1, 'ss02' 1;
   font-size: 20px;
+  font-weight: @wNormal;
   letter-spacing: -0.005em;
   line-height: 1.5rem;
 
@@ -38,7 +39,7 @@ html, body {
 
 h1, .h1 {
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: 400;
   // letter-spacing: -0.017em;
   margin-bottom: 1.5rem;
   line-height: 4rem;
@@ -47,7 +48,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 2.827rem;
-  font-weight: 500;
+  font-weight: @wLight;
   letter-spacing: -0.017em;
   margin: 2.5rem 0 1rem;
   line-height: 3rem;
@@ -55,7 +56,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: @wStrong;
   letter-spacing: -0.016em;
   margin: 1.5rem 0 1rem;
   line-height: 2.5rem;
@@ -63,7 +64,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: 1.414rem;
-  font-weight: 300;
+  font-weight: @wLight;
   letter-spacing: -0.013em;
   margin: .5rem 0;
   line-height: 1.5rem;
@@ -71,7 +72,7 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: @wStrong;
   letter-spacing: -0.005em;
   margin: 1rem 0 0;
   line-height: 1.5rem;
@@ -79,9 +80,8 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 0.707rem;
-  font-weight: 900;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  font-weight: @wStronger;
+  .capitals;
   line-height: 1.5rem;
 }
 
@@ -94,11 +94,11 @@ code, pre {
   font-family: monospace;
   background: @cS100;
   padding: 0 .25rem;
-  border-radius: @radius;
+  border-radius: @rNormal;
 }
 
 .strong() {
-  font-weight: 600;
+  font-weight: @wStrong;
 }
 strong, b {
   .strong;
@@ -127,6 +127,12 @@ strong, b {
   &-align {
     &-right {
       text-align: right;
+    }
+    &-left {
+      text-align: left;
+    }
+    &-center {
+      text-align: center;
     }
   }
 }

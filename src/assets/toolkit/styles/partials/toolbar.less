@@ -8,21 +8,21 @@
     box-sizing: border-box;
     display: inline-block;
 
-    border: @borderWidth solid @cDark30;
+    border: @borderWidth solid @cBorder;
     border-right: none;
     &:first-child {
-      border-radius: .25rem 0 0 .25rem;
+      border-radius: @buttonRadius 0 0 @buttonRadius;
     }
     &:last-child {
       border-right: $border;
-      border-radius: 0 .25rem .25rem 0;
+      border-radius: 0 @buttonRadius @buttonRadius 0;
     }
 
     margin-bottom: .5rem;
     line-height: 2rem;
     padding: calc(0.25rem - @borderWidth) calc(1rem - 0.1em) calc(0.25rem - @borderWidth) 1rem;
 
-    font-weight: 700;
+    font-weight: @wStronger;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1em;

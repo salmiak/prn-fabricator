@@ -174,26 +174,45 @@
 <span class="button">Span</span>
 <div class="button">Div</div>
 <a href="#" class="button">Anchor</a>
-
-<div>
-	<span class="button">Default</span>
-	<span class="button button-primary">Primary</span>
-	<span class="button button-destructive">Destructive</span>
-	<span class="button button-disabled">Disabled</span>
-</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button&quot;&gt;Button&lt;/button&gt;
 &lt;span class&#x3D;&quot;button&quot;&gt;Span&lt;/span&gt;
 &lt;div class&#x3D;&quot;button&quot;&gt;Div&lt;/div&gt;
-&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;button&quot;&gt;Anchor&lt;/a&gt;
+&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;button&quot;&gt;Anchor&lt;/a&gt;</code></pre>
+</div>
 
-&lt;div&gt;
-	&lt;span class&#x3D;&quot;button&quot;&gt;Default&lt;/span&gt;
-	&lt;span class&#x3D;&quot;button button-primary&quot;&gt;Primary&lt;/span&gt;
-	&lt;span class&#x3D;&quot;button button-destructive&quot;&gt;Destructive&lt;/span&gt;
-	&lt;span class&#x3D;&quot;button button-disabled&quot;&gt;Disabled&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+		</div>
+		<div class="f-item-group" id="buttons.02.colors">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Colors</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p><strong>Only</strong> use <code>flat</code> when there is no ambiguity whether or not it's a button.</p>
+
+</div>
+<div class="f-item-preview">
+	<span class="button">Default</span> <span class="button button-disabled">Default</span><br />
+<span class="button button-primary">Primary</span> <span class="button button-primary button-disabled">Primary</span><br />
+<span class="button button-destructive">Destructive</span> <span class="button button-destructive button-disabled">Destructive</span><br />
+<span class="button button-flat">Flat</span> <span class="button button-flat button-disabled">Flat</span><br />
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;span class&#x3D;&quot;button&quot;&gt;Default&lt;/span&gt; &lt;span class&#x3D;&quot;button button-disabled&quot;&gt;Default&lt;/span&gt;&lt;br /&gt;
+&lt;span class&#x3D;&quot;button button-primary&quot;&gt;Primary&lt;/span&gt; &lt;span class&#x3D;&quot;button button-primary button-disabled&quot;&gt;Primary&lt;/span&gt;&lt;br /&gt;
+&lt;span class&#x3D;&quot;button button-destructive&quot;&gt;Destructive&lt;/span&gt; &lt;span class&#x3D;&quot;button button-destructive button-disabled&quot;&gt;Destructive&lt;/span&gt;&lt;br /&gt;
+&lt;span class&#x3D;&quot;button button-flat&quot;&gt;Flat&lt;/span&gt; &lt;span class&#x3D;&quot;button button-flat button-disabled&quot;&gt;Flat&lt;/span&gt;&lt;br /&gt;</code></pre>
 </div>
 
 		</div>
@@ -329,7 +348,7 @@
 		<h4>Rebel base, in range.</h4>
 		You may fire when ready.
 	</div>
-	<div class="toast-action"><button class="button button-small">Dismiss</button></div>
+	<div class="toast-action"><button class="button button-small button-flat"><i class="fa fa-rocket"></i> Fire</button></div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -363,7 +382,7 @@
 		&lt;h4&gt;Rebel base, in range.&lt;/h4&gt;
 		You may fire when ready.
 	&lt;/div&gt;
-	&lt;div class&#x3D;&quot;toast-action&quot;&gt;&lt;button class&#x3D;&quot;button button-small&quot;&gt;Dismiss&lt;/button&gt;&lt;/div&gt;
+	&lt;div class&#x3D;&quot;toast-action&quot;&gt;&lt;button class&#x3D;&quot;button button-small button-flat&quot;&gt;&lt;i class&#x3D;&quot;fa fa-rocket&quot;&gt;&lt;/i&gt; Fire&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -390,6 +409,7 @@
 	<div class="toast-message">
 		It didn't go in. It just impacted on the surface.
 	</div>
+	<div class="toast-action"><button class="button button-small button-flat">Try again</button></div>
 </div>
 
 <div class="toast toast-info">
@@ -397,7 +417,6 @@
 	<div class="toast-message">
 		You may fire when ready.
 	</div>
-	<div class="toast-action"><button class="button button-small">Dismiss</button></div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -412,6 +431,7 @@
 	&lt;div class&#x3D;&quot;toast-message&quot;&gt;
 		It didn&#x27;t go in. It just impacted on the surface.
 	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;toast-action&quot;&gt;&lt;button class&#x3D;&quot;button button-small button-flat&quot;&gt;Try again&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class&#x3D;&quot;toast toast-info&quot;&gt;
@@ -419,7 +439,6 @@
 	&lt;div class&#x3D;&quot;toast-message&quot;&gt;
 		You may fire when ready.
 	&lt;/div&gt;
-	&lt;div class&#x3D;&quot;toast-action&quot;&gt;&lt;button class&#x3D;&quot;button button-small&quot;&gt;Dismiss&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -566,7 +585,7 @@
 <div class="input-hint">Here's a helpful tip regarding this input.</div>
 
 <label for="textInputButton" class="text-error">Validation error</label>
-<input type="text" id="textInputButton" placeholder="Email" class="input-validation-error" value="darth-vaders email@deathstar.gov" />
+<input type="text" id="textInputButton" placeholder="Email" class="input-validation-error" value="darth vaderl@deathstar.gov" />
 <div class="input-hint text-error">Please enter a valid email address.</div>
 
 <label for="textInputButton">Text input with two buttons</label>
@@ -595,7 +614,7 @@
 &lt;div class&#x3D;&quot;input-hint&quot;&gt;Here&#x27;s a helpful tip regarding this input.&lt;/div&gt;
 
 &lt;label for&#x3D;&quot;textInputButton&quot; class&#x3D;&quot;text-error&quot;&gt;Validation error&lt;/label&gt;
-&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInputButton&quot; placeholder&#x3D;&quot;Email&quot; class&#x3D;&quot;input-validation-error&quot; value&#x3D;&quot;darth-vaders email@deathstar.gov&quot; /&gt;
+&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInputButton&quot; placeholder&#x3D;&quot;Email&quot; class&#x3D;&quot;input-validation-error&quot; value&#x3D;&quot;darth vaderl@deathstar.gov&quot; /&gt;
 &lt;div class&#x3D;&quot;input-hint text-error&quot;&gt;Please enter a valid email address.&lt;/div&gt;
 
 &lt;label for&#x3D;&quot;textInputButton&quot;&gt;Text input with two buttons&lt;/label&gt;

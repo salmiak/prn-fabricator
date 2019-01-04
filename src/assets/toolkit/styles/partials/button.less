@@ -1,16 +1,16 @@
-@radius: 0.125rem;
-
 .button-hover(@color, @cHover, @cDisabled) {
   background-color: @color;
+  transition: all 0.3s;
 
-  &:not(.disabled):not(&-disabled):not([disabled]){
+  &:not(.disabled):not(.button-disabled):not([disabled]){
     cursor: pointer;
     &:hover, &:active, &:focus {
       background-color: @cHover;
+      box-shadow: @shadowSmall;
     }
   }
 
-  &.disabled, &-disabled, &[disabled] {
+  &.disabled, &.button-disabled, &[disabled] {
     background-color: @cDisabled;
     color: @cDark30;
   }
@@ -18,30 +18,33 @@
 
 .button {
   color: @cDark75;
-  .button-hover(@cS400, @cS600, @cS300);
+  .button-hover(@cS400, @cS300, @cS300);
 
   border: none;
 
   display: inline-block;
   flex-shrink: 0;
-  border-radius: @radius;
+  border-radius: @buttonRadius;
   margin-bottom: .5rem;
 
   line-height: 1.5rem;
   padding: 0.5rem calc(1rem - 0.1em) 0.5rem 1rem;
 
-  font-weight: 800;
+  font-weight: @wStronger;
   text-decoration: none;
   .capitals;
   font-size: 1rem;
   white-space: nowrap;
 
   &-primary {
-    .button-hover(@cPrimary, saturate(darken(@cPrimary, 10%),25%), desaturate(lighten(@cPrimary, 10%),25%));
+    .button-hover(@cPrimary, saturate(lighten(@cPrimary, 10%),25%), fade(@cPrimary, 50%));
   }
   &-destructive {
-    .button-hover(lighten(@cSol,15%), @cSol, desaturate(lighten(@cSol, 10%),25%));
+    .button-hover(lighten(@cSol,15%), lighten(@cSol,25%), fade(@cSol, 25%));
     color: fade(white, 70%);
+  }
+  &-flat {
+    .button-hover(transparent, fade(@cS50, 15%), transparent);
   }
 
   &-small {
@@ -79,11 +82,11 @@
       border-radius: 0;
       margin-right: 2px;
       &:first-child {
-        border-radius: @radius 0 0 @radius;
+        border-radius: @buttonRadius 0 0 @buttonRadius;
       }
       &:last-child {
         border-right: $border;
-        border-radius: 0 @radius @radius 0;
+        border-radius: 0 @buttonRadius @buttonRadius 0;
         margin-right: 0;
       }
     }

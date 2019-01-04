@@ -2,13 +2,15 @@
 @outerPadding: .75rem;
 
 .table-wrapper {
+  position: relative;
   overflow-x: auto;
   padding: @outerPadding 0 @outerPadding @outerPadding;
   background: @cS100;
-  border-radius: @radius;
+  border-radius: @rBig;
   box-shadow: @shadowSmall;
   margin-bottom: 1rem;
 }
+
 table {
   width: 100%;
   .small;
@@ -19,7 +21,7 @@ table {
   td, th {
     padding: @padding;
     padding-top: calc(@padding - 1px);
-    border-bottom: 1px solid @cS200;
+    border-bottom: 1px solid @cBorder;
     vertical-align: top;
     white-space: nowrap;
   }
